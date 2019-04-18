@@ -7,7 +7,81 @@
     <title>Profile form about dogs</title>
 </head>
 <body>
-    <h1>Profile form</h1> 
-    <a href="index.html">Home page</a>
+    <header>
+        <h1>Profile form: do you like dogs?</h1> 
+        <a href="index.html">Home page</a>
+    </header>
+        <section>
+            <h2>Profile: About youself</h2>
+        <form method="POST" action="https://formspree.io/tigory8@gmail.com">
+              <label for="client-name">Name:</label>
+            <input type="text" placeholder="Name"
+            id="client-name" name="client-name" required>
+                 <br>
+               <label for="client-email">
+                   Email: <input type="email" placeholder="Email"
+                   id="client-email" name="client-email" required>
+               </label>
+                <br>
+               <label for="client-age">Age:</label>
+                 <input type="text" placeholder="Age"
+                 id="client-age" name="client-age" required>
+                <br>
+                <label>Sex:</label>
+                    <label><input type="radio" value="male" name="sex" checked>Male</label>
+                    <label><input type="radio" value="female" name="sex">Female</label>
+                    <label><input type="radio" value="other" name="sex">Other</label>
+        </section>
+                        <br>
+         <section>
+            <h2>Profile: Do you like dogs?</h2>
+            <h3>Do you like dogs?</h3>
+                <label>Like dogs:</label>
+                    <label><input type="radio" value="yes" name="Like dogs" checked>Yes</label>
+                    <label><input type="radio" value="no" name="Like dogs">No</label>
+                       <br>
+                       <label for="pet-like">Other:</label>
+            <input type="text" placeholder="Other" name="Like dogs"
+            id="pet-like">
+                 <br>
+                 <h3>Do you have any dog?</h3>
+                 <label>Has dog:</label>
+                    <label><input type="radio" value="yes" name="Has dog" checked>Yes</label>
+                    <label><input type="radio" value="no" name="Has dog">No</label>
+                       <br>
+                  <label>
+                           Your comment:
+                             <br>
+                           <textarea name="comment"></textarea>
+                  </label>
+                     <br>
+              <label for="pet-name">Name:</label>
+            <input type="text" placeholder="Name of pet"
+            id="pet-name" name="pet-name">
+                 <br>
+               <label for="pet-habits">
+                   Habits: <input type="text" placeholder="Habits of pet"
+                   id="pet-habits" name="pet-habits">
+               </label>
+                <br>
+               <label for="pet-age">Age:</label>
+                 <input type="text" placeholder="Age of pet"
+                 id="pet-age" name="pet-age">
+                <br>
+                <label>Gender:</label>
+                    <label><input type="radio" value="male" name="gender">Male</label>
+                    <label><input type="radio" value="female" name="gender"checked>Female</label>
+                    <label><input type="radio" value="other" name="gender">Other</label>
+                       <br>
+                       <label>
+                           Your comment:
+                             <br>
+                           <textarea name="comments"></textarea>
+                           </label>
+                             <br>
+                          <input type="submit">
+                          <input type="reset">
+            </form>
+        </section>
 </body>
 </html>
