@@ -8,12 +8,15 @@
 </head>
 <body>
     <header>
-        <h1>Profile form: do you like dogs?</h1> 
-        <a href="index.html">Home page</a>
+          <h1>Profile form: do you like dogs?</h1> 
     </header>
+         <nav>
+           <a href="index.html">Home page</a>
+        </nav>
         <section>
             <h2>Profile: About youself</h2>
         <form method="POST" action="https://formspree.io/tigory8@gmail.com">
+            <fieldset>
               <label for="client-name">Name:</label>
             <input type="text" placeholder="Name"
             id="client-name" name="client-name" required>
@@ -25,7 +28,7 @@
                 <br>
                <label for="client-age">Age:</label>
                  <input type="text" placeholder="Age"
-                 id="client-age" name="client-age" required>
+                 id="client-age" name="client-age" pattern="[0-9]" title="Only digits" required>
                 <br>
                 <label>Sex:</label>
                     <label><input type="radio" value="male" name="sex" checked>Male</label>
@@ -66,7 +69,7 @@
                 <br>
                <label for="pet-age">Age:</label>
                  <input type="text" placeholder="Age of pet"
-                 id="pet-age" name="pet-age">
+                 id="pet-age" name="pet-age" pattern="[0-9]" title="Only digits">
                 <br>
                 <label>Gender:</label>
                     <label><input type="radio" value="male" name="gender">Male</label>
@@ -81,6 +84,7 @@
                              <br>
                           <input type="submit">
                           <input type="reset">
+                <fieldset>
             </form>
         </section>
 </body>
